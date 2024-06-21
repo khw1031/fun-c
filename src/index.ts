@@ -1,7 +1,9 @@
+export { add } from "./add";
 export { identity } from "./identity";
-export { noop } from "./noop";
 export { isNumber } from "./isNumber";
 export { isString } from "./isString";
-export { add } from "./add";
+export { noop } from "./noop";
+export { pipe } from "./pipe";
+export { reduce } from "./reduce";
 
-export type { Include } from "./types";
+export type * from "./types";

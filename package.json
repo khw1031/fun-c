@@ -13,7 +13,8 @@
     "test:type": "vitest --typecheck",
     "test:watch": "vitest --watch",
     "test:type:watch": "vitest --typecheck --watch",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepublish": "pnpm run build"
   },
   "devDependencies": {
     "@types/node": "^20.14.7",
