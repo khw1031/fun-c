@@ -1,0 +1,26 @@
+{
+  "name": "fun-c",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm clean && tsc && vite build",
+    "test": "vitest",
+    "test:type": "vitest --typecheck",
+    "test:watch": "vitest --watch",
+    "test:type:watch": "vitest --typecheck --watch",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.7",
+    "prettier": "^3.3.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0"
+  }
+}
