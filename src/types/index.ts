@@ -1,6 +1,8 @@
 export type { Arrow } from "./Arrow";
 export type { Awaited } from "./Awaited";
+export type { Cast } from "./Cast";
 export type { Equals } from "./Equals";
+export type { ExcludeObject } from "./ExcludeObject";
 export type { Falsy } from "./Falsy";
 export type { Head } from "./Head";
 export type { Include } from "./Include";
