@@ -1,11 +1,14 @@
 export { add } from "./add";
+export { as } from "./as";
 export { chunk } from "./chunk";
 export { concurrent } from "./concurrent";
 export { delay } from "./delay";
 export { each } from "./each";
 export { entries } from "./entries";
 export { filter } from "./filter";
+export { find } from "./find";
 export { fromEntries } from "./fromEntries";
+export { head } from "./head";
 export { identity } from "./identity";
 export { isArray } from "./isArray";
 export { isBoolean } from "./isBoolean";
