@@ -2,6 +2,7 @@ export { add } from "./add";
 export { chunk } from "./chunk";
 export { concurrent } from "./concurrent";
 export { delay } from "./delay";
+export { each } from "./each";
 export { filter } from "./filter";
 export { identity } from "./identity";
 export { isNumber } from "./isNumber";
