@@ -8,6 +8,7 @@ export type { Head } from "./Head";
 export type { Include } from "./Include";
 export type { Iter } from "./Iter";
 export type { IterableInfer } from "./IterableInfer";
+export type { Key } from "./Key";
 export type { AsyncReducer, SyncReducer } from "./Reducer";
 export type { ReturnIterableIteratorType } from "./ReturnIterableIteratorType";
 export type { ReturnArrayType } from "./ReturnArrayType";
