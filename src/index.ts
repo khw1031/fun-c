@@ -1,4 +1,5 @@
 export { add } from "./add";
+export { chunk } from "./chunk";
 export { concurrent } from "./concurrent";
 export { delay } from "./delay";
 export { filter } from "./filter";

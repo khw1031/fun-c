@@ -41,3 +41,6 @@ export function isAsyncIterable<T = unknown>(
 ): a is AsyncIterable<T> {
   return typeof (a as any)?.[Symbol.asyncIterator] === "function";
 }
+
+export const empty = function* () {};
+export const asyncEmpty = async function* () {};
