@@ -9,6 +9,7 @@ export { isString } from "./isString";
 export { map } from "./map";
 export { noop } from "./noop";
 export { pipe } from "./pipe";
+export { range } from "./range";
 export { reduce } from "./reduce";
 export { take } from "./take";
 export { toArray } from "./toArray";
