@@ -11,7 +11,7 @@ import {
   ReturnIterableIteratorType,
   TruthyTypesOf,
 } from "../types";
-import { Reject, Resolve } from "../types/Iter";
+import { Reject, Resolve } from "../types";
 
 async function* asyncSequential<A>(
   f: (a: A) => unknown,
