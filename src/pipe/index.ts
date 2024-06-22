@@ -4,11 +4,10 @@ import { Awaited, ReturnPipeType } from "../types";
 
 function pipe<T1, R>(a: T1, f1: (a: Awaited<T1>) => R): ReturnPipeType<[T1, R]>;
 
-// prettier-ignore
 function pipe<T1, T2, R>(
   a: T1,
   f1: (a: Awaited<T1>) => T2,
-  f2: (a: Awaited<T2>) => R
+  f2: (a: Awaited<T2>) => R,
 ): ReturnPipeType<[T1, T2, R]>;
 
 function pipe<T1, T2, T3, R>(
@@ -143,7 +142,6 @@ function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, R>(
   f13: (a: Awaited<T13>) => R,
 ): ReturnPipeType<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, R]>;
 
-// prettier-ignore
 function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, R>(
   a: T1,
   f1: (a: Awaited<T1>) => T2,
@@ -160,10 +158,28 @@ function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, R>(
   f12: (a: Awaited<T12>) => T13,
   f13: (a: Awaited<T13>) => T14,
   f14: (a: Awaited<T14>) => R,
-): ReturnPipeType<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, R]>;
+): ReturnPipeType<
+  [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, R]
+>;
 
-// prettier-ignore
-function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, R>(
+function pipe<
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  T7,
+  T8,
+  T9,
+  T10,
+  T11,
+  T12,
+  T13,
+  T14,
+  T15,
+  R,
+>(
   a: T1,
   f1: (a: Awaited<T1>) => T2,
   f2: (a: Awaited<T2>) => T3,
@@ -180,10 +196,29 @@ function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, 
   f13: (a: Awaited<T13>) => T14,
   f14: (a: Awaited<T14>) => T15,
   f15: (a: Awaited<T15>) => R,
-): ReturnPipeType<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, R]>;
+): ReturnPipeType<
+  [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, R]
+>;
 
-// prettier-ignore
-function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, R>(
+function pipe<
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  T7,
+  T8,
+  T9,
+  T10,
+  T11,
+  T12,
+  T13,
+  T14,
+  T15,
+  T16,
+  R,
+>(
   a: T1,
   f1: (a: Awaited<T1>) => T2,
   f2: (a: Awaited<T2>) => T3,
@@ -201,10 +236,30 @@ function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, 
   f14: (a: Awaited<T14>) => T15,
   f15: (a: Awaited<T15>) => T16,
   f16: (a: Awaited<T16>) => R,
-): ReturnPipeType<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, R]>;
+): ReturnPipeType<
+  [T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, R]
+>;
 
-// prettier-ignore
-function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, R>(
+function pipe<
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  T7,
+  T8,
+  T9,
+  T10,
+  T11,
+  T12,
+  T13,
+  T14,
+  T15,
+  T16,
+  T17,
+  R,
+>(
   a: T1,
   f1: (a: Awaited<T1>) => T2,
   f2: (a: Awaited<T2>) => T3,
@@ -223,10 +278,50 @@ function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, 
   f15: (a: Awaited<T15>) => T16,
   f16: (a: Awaited<T16>) => T17,
   f17: (a: Awaited<T17>) => R,
-): ReturnPipeType<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, R]>;
+): ReturnPipeType<
+  [
+    T1,
+    T2,
+    T3,
+    T4,
+    T5,
+    T6,
+    T7,
+    T8,
+    T9,
+    T10,
+    T11,
+    T12,
+    T13,
+    T14,
+    T15,
+    T16,
+    T17,
+    R,
+  ]
+>;
 
-// prettier-ignore
-function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, R>(
+function pipe<
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  T7,
+  T8,
+  T9,
+  T10,
+  T11,
+  T12,
+  T13,
+  T14,
+  T15,
+  T16,
+  T17,
+  T18,
+  R,
+>(
   a: T1,
   f1: (a: Awaited<T1>) => T2,
   f2: (a: Awaited<T2>) => T3,
@@ -246,10 +341,52 @@ function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, 
   f16: (a: Awaited<T16>) => T17,
   f17: (a: Awaited<T17>) => T18,
   f18: (a: Awaited<T18>) => R,
-): ReturnPipeType<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, R]>;
+): ReturnPipeType<
+  [
+    T1,
+    T2,
+    T3,
+    T4,
+    T5,
+    T6,
+    T7,
+    T8,
+    T9,
+    T10,
+    T11,
+    T12,
+    T13,
+    T14,
+    T15,
+    T16,
+    T17,
+    T18,
+    R,
+  ]
+>;
 
-// prettier-ignore
-function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, R>(
+function pipe<
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  T7,
+  T8,
+  T9,
+  T10,
+  T11,
+  T12,
+  T13,
+  T14,
+  T15,
+  T16,
+  T17,
+  T18,
+  T19,
+  R,
+>(
   a: T1,
   f1: (a: Awaited<T1>) => T2,
   f2: (a: Awaited<T2>) => T3,
@@ -270,10 +407,54 @@ function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, 
   f17: (a: Awaited<T17>) => T18,
   f18: (a: Awaited<T18>) => T19,
   f19: (a: Awaited<T19>) => R,
-): ReturnPipeType<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, R]>;
+): ReturnPipeType<
+  [
+    T1,
+    T2,
+    T3,
+    T4,
+    T5,
+    T6,
+    T7,
+    T8,
+    T9,
+    T10,
+    T11,
+    T12,
+    T13,
+    T14,
+    T15,
+    T16,
+    T17,
+    T18,
+    T19,
+    R,
+  ]
+>;
 
-// prettier-ignore
-function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, R>(
+function pipe<
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  T7,
+  T8,
+  T9,
+  T10,
+  T11,
+  T12,
+  T13,
+  T14,
+  T15,
+  T16,
+  T17,
+  T18,
+  T19,
+  T20,
+  R,
+>(
   a: T1,
   f1: (a: Awaited<T1>) => T2,
   f2: (a: Awaited<T2>) => T3,
@@ -295,7 +476,31 @@ function pipe<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, 
   f18: (a: Awaited<T18>) => T19,
   f19: (a: Awaited<T19>) => T20,
   f20: (a: Awaited<T20>) => R,
-): ReturnPipeType<[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, R]>;
+): ReturnPipeType<
+  [
+    T1,
+    T2,
+    T3,
+    T4,
+    T5,
+    T6,
+    T7,
+    T8,
+    T9,
+    T10,
+    T11,
+    T12,
+    T13,
+    T14,
+    T15,
+    T16,
+    T17,
+    T18,
+    T19,
+    T20,
+    R,
+  ]
+>;
 
 function pipe(a: any, ...fns: any[]) {
   return reduce(pipe1, a, fns);

@@ -44,9 +44,12 @@ function async<T>(
 
     async next(_concurrent: any) {
       if (iterator === undefined) {
-        // prettier-ignore
         iterator = isConcurrent(_concurrent)
-          ? asyncSequential(start, end, concurrent(_concurrent.length, iterable))
+          ? asyncSequential(
+              start,
+              end,
+              concurrent(_concurrent.length, iterable),
+            )
           : asyncSequential(start, end, iterable);
       }
 

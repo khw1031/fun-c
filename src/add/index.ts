@@ -4,13 +4,13 @@ import { isString } from "../isString";
 
 import type { Awaited } from "../types";
 
-// prettier-ignore
-type ReturnAddType<T, A extends T, B extends T> =
-  | [A] extends [Promise<Awaited<T>>]
+type ReturnAddType<T, A extends T, B extends T> = [A] extends [
+  Promise<Awaited<T>>,
+]
   ? Promise<Awaited<T>>
   : [B] extends [Promise<Awaited<T>>]
-  ? Promise<Awaited<T>>
-  : [Awaited<T>];
+    ? Promise<Awaited<T>>
+    : [Awaited<T>];
 
 function sync(a: number | string, b: number | string) {
   if (isNumber(a) && isNumber(b)) {

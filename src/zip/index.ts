@@ -56,10 +56,7 @@ function zip<T extends UniversalIterable, TS extends UniversalIterable[]>(
   a: T,
 ): (...args: TS) => ReturnZipType<[T, ...TS]>;
 
-// prettier-ignore
-function zip<T extends UniversalIterable[]>(
-  ...args: T
-): ReturnZipType<[...T]>;
+function zip<T extends UniversalIterable[]>(...args: T): ReturnZipType<[...T]>;
 
 function zip<TS extends UniversalIterable[]>(
   ...iterables: TS[]

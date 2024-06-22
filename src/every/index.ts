@@ -8,11 +8,7 @@ import type { Arrow, ReturnValueType, IterableInfer } from "../types";
 
 function every<A extends readonly []>(f: Arrow, iterable: A): true;
 
-// prettier-ignore
-function every<A, B = unknown>(
-  f: (a: A) => B,
-  iterable: Iterable<A>,
-): boolean;
+function every<A, B = unknown>(f: (a: A) => B, iterable: Iterable<A>): boolean;
 
 function every<A, B = unknown>(
   f: (a: A) => B,
