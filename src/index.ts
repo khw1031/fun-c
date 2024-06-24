@@ -45,6 +45,8 @@ export { takeWhile } from "./takeWhile";
 export { tap } from "./tap";
 export { toArray } from "./toArray";
 export { toAsync } from "./toAsync";
+export { toNumber } from "./toNumber";
+export { toString } from "./toString";
 export { uniq } from "./uniq";
 export { uniqBy } from "./uniqBy";
 export { values } from "./values";
