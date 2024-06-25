@@ -3,8 +3,6 @@ import { head } from "../head";
 import { isNumber } from "../isNumber";
 import { map } from "../map";
 import { pipe } from "../pipe";
-import { tap } from "../tap";
-import { toArray } from "../toArray";
 import { toString } from "../toString";
 
 const isCurrencyFormat = (str: string) =>
