@@ -37,6 +37,8 @@ export { range } from "./range";
 export { reduce } from "./reduce";
 export { reject } from "./reject";
 export { slice } from "./slice";
+export { sort } from "./sort";
+export { sortBy } from "./sortBy";
 export { split } from "./split";
 export { take } from "./take";
 export { takeRight } from "./takeRight";
