@@ -19,8 +19,6 @@
     "build": "pnpm clean && tsc && vite build",
     "test": "vitest",
     "test:type": "vitest --typecheck",
-    "test:watch": "vitest --watch",
-    "test:type:watch": "vitest --typecheck --watch",
     "coverage": "vitest run --coverage",
     "prepublish": "pnpm run build"
   },
