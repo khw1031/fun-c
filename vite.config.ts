@@ -12,6 +12,7 @@ export default defineConfig({
       formats: ["es", "cjs"],
       fileName: (format) => `${format}/index.js`,
     },
+    sourcemap: true,
     outDir: "dist",
   },
   test: {
